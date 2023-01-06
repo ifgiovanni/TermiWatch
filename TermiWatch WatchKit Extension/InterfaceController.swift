@@ -105,7 +105,7 @@ func colorAttributedString(string: String, color: UIColor)
 
 func activitySummaryAttributedString(
   _ activitySummary: HKActivitySummary,
-  separator: String = "•"
+  separator: String = " / "
 ) -> NSAttributedString {
   let excerciseValue = activitySummary.activeEnergyBurned.doubleValue(
     for: HKUnit.kilocalorie()
